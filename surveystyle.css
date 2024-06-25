@@ -1,3 +1,4 @@
+/* ADD FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
@@ -8,4 +9,256 @@ font-family: Lato !important;
 }
 p {
 max-width: none !important;
+}
+
+/* SET VARIABLES */
+:root {
+  --primary-brand-color: #0D1A75;
+  --secondary-brand-color: #fff;
+  --secondary-blue-color: #;
+}
+
+/* Page Layout */
+body {
+  color: #fff;
+  background: var(--secondary-blue-color);
+  /*font-weight: unset; */
+}
+
+#container {
+  background: var(--secondary-blue-color);
+  border: none;
+}
+
+#pagecontent {
+  background-color: var(--secondary-blue-color);
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.labelrc {
+  background-color: var(--secondary-blue-color);
+  /*font-weight: unset;*/
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding: 10px 10px;
+}
+
+.rich-text-field-label>p,
+.rich-text-field-label>p a:link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-top: 20px;
+}
+
+.data {
+  background-color: var(--secondary-blue-color);
+  font-weight: unset;
+}
+
+#questiontable tr,
+#questiontable td {
+  /*border-spacing: 0px;*/
+  /* border-color: #cccccc !important;*/
+  border: none;
+}
+
+td.header.toolbar {
+  background: var(--secondary-blue-color);
+  font-weight: 700;
+  font-size: 24px !important;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+#surveyinstructions-reveal {
+  display: none;
+}
+
+.note {
+  padding: 0 0 0;
+  color: var(--primary-brand-color);
+}
+
+/* SURVEY TITLE */
+#surveytitle {
+  font-family: "Lato", serif !important;
+  color: var(--primary-brand-color);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: -0.01em;
+}
+
+/* BODY FONT */
+html body * {
+  font-family: "Lato", sans-serif !important;
+  color: var(--primary-brand-color);
+}
+
+a:link {
+  color: var(--primary-brand-color);
+}
+
+/* HIDE ELEMENTS */
+
+/* "reset" button below radios */
+.resetLinkParent {
+  display: none;
+}
+
+.expandLink {
+  display: none;
+}
+
+/*Text resizer*/
+
+#changeFont {
+  visibility: hidden;
+}
+
+/* Required field indicator */
+.requiredlabel {
+  display: none;
+}
+
+/* Footer */
+#footer {
+  visibility: hidden;
+}
+
+/* UPDATE BUTTONS */
+
+div.enhancedchoice label {
+  display: flex;
+  background: var(--secondary-brand-color);
+  border-radius: 50px;
+  height: auto;
+  min-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.ec {
+  color: var(--primary-brand-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+div.enhancedchoice label.hover:hover,
+div.enhancedchoice label.hover.selectedradio,
+div.enhancedchoice label.hover.selectedchkbox {
+  background-color: var(--primary-brand-color) !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+.hover.selectedradio .ec,
+.hover.selectedchkbox .ec,
+.hover:hover .ec {
+  color: #ffffff !important;
+}
+
+div.enhancedchoice label.unselectedchkbox,
+div.enhancedchoice label.selectedchkbox {
+  justify-content: flex-start;
+}
+
+/* Next and previous buttons */
+
+.jqbutton,
+.jqbutton span {
+  background-color: var(--primary-brand-color) !important;
+  color: #ffffff;
+  border-radius: 50px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  min-width: 140px;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+}
+
+select.x-form-text {
+  min-width: 100%;
+  max-width: 100%;
+  border: none;
+  height: 32px;
+  padding: 2px 5px;
+}
+
+.x-form-text {
+  min-width: 100%;
+  border: none;
+  font-size: 16px;
+}
+
+.info-box {
+  background-color: #CCE1E1;
+  border-radius: 15px;
+  padding: 20px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #666;
+  margin-bottom: auto;
+  z-index: 1;
+}
+
+.info-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Sliders */
+.ui-slider .ui-slider-handle {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+div.slider .ui-state-default {
+  border: none;
+  background-color: var(--primary-brand-color);
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.5em;
+  margin-left: -0.6em;
+}
+
+form#form input[type="text"].sldrnum {
+  color: var(--primary-brand-color);
+  font-size: 12px;
+  text-align: center;
+}
+
+#form {
+  border-top: none;
 }
